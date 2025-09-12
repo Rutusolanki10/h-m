@@ -1,0 +1,24 @@
+@media (max-width: 767.98px) {
+  /* captions smaller font on small screens */
+  .caption h5 {
+    font-size: 16px;
+  }
+  .caption a {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* medium screens image tweaks */
+  .image-box img {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  /* hide left-aligned text if needed */
+  .text-start {
+    display: none;
+  }
+}
