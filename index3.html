@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>H&M - Fashion Collection</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     * {
       box-sizing: border-box;
@@ -85,8 +89,9 @@
       justify-content: space-between;
       align-items: center;
       padding: 15px 25px;
-      border-bottom: 1px solid #e0e0e0;
-      background-color: #ffffff;
+     
+      background-color: #ffff
+      ;
     }
 
     .control-button {
@@ -187,9 +192,17 @@
       background-color: black;
     }
 
-    .filter-icon .line-1 { width: 22px; }
-    .filter-icon .line-2 { width: 16px; }
-    .filter-icon .line-3 { width: 10px; }
+    .filter-icon .line-1 {
+      width: 22px;
+    }
+
+    .filter-icon .line-2 {
+      width: 16px;
+    }
+
+    .filter-icon .line-3 {
+      width: 10px;
+    }
 
     /* Filter Sidebar */
     body.sidebar-open {
@@ -342,8 +355,15 @@
       cursor: pointer;
     }
 
-    .handle-min { left: 0%; transform: translateX(-50%);}
-    .handle-max { right: 0%; transform: translateX(50%);}
+    .handle-min {
+      left: 0%;
+      transform: translateX(-50%);
+    }
+
+    .handle-max {
+      right: 0%;
+      transform: translateX(50%);
+    }
 
     .sidebar-footer {
       display: flex;
@@ -389,7 +409,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 0;
-      padding-top: 20px;
+      
     }
 
     .product-card {
@@ -470,7 +490,7 @@
       width: 380px;
       height: 100%;
       background-color: white;
-      box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
       transition: right 0.3s ease-in-out;
       z-index: 1050;
       padding: 20px;
@@ -486,7 +506,7 @@
       position: relative;
       margin-bottom: 25px;
     }
-    
+
     .search-header input {
       width: 100%;
       border: none;
@@ -495,7 +515,7 @@
       font-size: 16px;
       outline: none;
     }
-    
+
     .search-header input:focus {
       border-bottom-color: #555;
     }
@@ -508,7 +528,7 @@
       width: 20px;
       opacity: 0.5;
     }
-    
+
     .search-header .close-btn {
       position: absolute;
       right: 5px;
@@ -555,7 +575,7 @@
       padding: 0;
       margin: 0;
     }
-    
+
     .search-list li {
       padding: 8px 0;
       cursor: pointer;
@@ -658,20 +678,22 @@
         gap: 30px;
         margin: 20px auto 40px;
       }
-      .footer-column, .footer-signup {
+
+      .footer-column,
+      .footer-signup {
         max-width: 100%;
         flex: none;
       }
     }
 
     @media (max-width: 1020px) {
-      footer{
+      footer {
         display: none;
       }
     }
 
     @media (max-width: 560px) {
-      .section5{
+      .section5 {
         display: block;
       }
     }
@@ -680,15 +702,18 @@
       .main1 ul li {
         display: none;
       }
+
       .sidebar {
         display: block;
       }
+
       .product-grid {
         grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
+
 <body>
   <!-- Header -->
   <div class="header">
@@ -698,7 +723,7 @@
     </div>
     <div class="footer2">
       <div class="main1">
-        <img src="https://i.ibb.co/6nZqQd0/H-M.png" alt="H&M Logo">
+        <img src="H&M copy.png" alt="H&M Logo">
         <ul>
           <li><a href="#">LADIES</a></li>
           <li><a href="#">MEN</a></li>
@@ -708,15 +733,17 @@
       </div>
       <div class="main2">
         <ul>
-          <li><img src="https://i.ibb.co/7yQJf5T/Search.png" alt="Search" id="openSearchBtn"></li>
-          <li><img src="https://i.ibb.co/6P8tQq9/Profile.png" alt="Profile"></li>
-          <li><img src="https://i.ibb.co/3sL0Q1z/Heart.png" alt="Wishlist"></li>
-          <li class="cart"><img src="https://i.ibb.co/9cQcQ1T/Bag.png" alt="Shopping Bag"></li>
+          <li><img src="Search (1).png" alt="Search" id="openSearchBtn"></li>
+          <li><img src="Profile.png" alt="Profile"></li>
+          <li><img src="Heart.png" alt="Wishlist"></li>
+          <li class="cart"><img src="Bag.png" alt="Shopping Bag"></li>
           <li>
-            <button class="sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-              <img src="https://i.ibb.co/6nZqQd0/image.png" alt="Menu">
+            <button class="sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight">
+              <img src="" alt="">
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
@@ -784,31 +811,31 @@
       <ul class="dropdown-menu" id="sortDropdown">
         <li>
           <label>
-            <input type="radio" name="sort" checked>
+            <input type="radio" name="sort" value="recommended" checked>
             Recommended
           </label>
         </li>
         <li>
           <label>
-            <input type="radio" name="sort">
+            <input type="radio" name="sort" value="newest">
             Newest
           </label>
         </li>
         <li>
           <label>
-            <input type="radio" name="sort">
+            <input type="radio" name="sort" value="lowest">
             Lowest price
           </label>
         </li>
         <li>
           <label>
-            <input type="radio" name="sort">
+            <input type="radio" name="sort" value="highest">
             Highest price
           </label>
         </li>
       </ul>
     </div>
-    
+
     <button class="control-button" id="filterBtn">
       <div class="filter-icon">
         <span class="line-1"></span>
@@ -836,15 +863,15 @@
           <span class="toggle-icon">+</span>
         </div>
         <div class="filter-options" id="price">
-          <div class="price-display" id="priceRange">$1000 - $5000</div>
-          <div class="price-slider-container">
-            <div class="price-slider-range"></div>
-            <div class="slider-handle handle-min"></div>
-            <div class="slider-handle handle-max"></div>
+          <div class="price-display" id="priceRange">₹1000 - ₹20000</div>
+          <div class="price-slider-container" id="priceSlider">
+            <div class="price-slider-range" id="priceRangeBar"></div>
+            <div class="slider-handle handle-min" id="handleMin"></div>
+            <div class="slider-handle handle-max" id="handleMax"></div>
           </div>
           <div style="display: flex; justify-content: space-between; margin-top: 8px;">
-            <span>$1000</span>
-            <span>$20000</span>
+            <span>₹1000</span>
+            <span>₹20000</span>
           </div>
         </div>
       </div>
@@ -946,11 +973,11 @@
   </div>
 
   <!-- Product Grid -->
-  <div class="product-grid">
-    <div class="product-card" data-price="2499" data-size="medium" data-color="black" data-pattern="solid" data-fit="regular" data-neckline="round" data-occasion="casual" data-sleeve-length="long">
+  <div class="product-grid" id="productGrid">
+    <div class="product-card" data-price="2499" data-size="medium" data-color="black" data-pattern="solid"
+      data-fit="regular" data-neckline="round" data-occasion="casual" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img21.webp" alt="Product Back" class="img-back">
-        
         <img src="images/ladies/img22.avif" alt="Product Front" class="img-front">
       </div>
       <div class="product-info">
@@ -959,7 +986,8 @@
         <div class="price">Rs.2,499.00</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="large" data-color="blue" data-pattern="striped" data-fit="slim" data-neckline="v-neck" data-occasion="casual" data-sleeve-length="short">
+    <div class="product-card" data-price="1999" data-size="large" data-color="blue" data-pattern="striped"
+      data-fit="slim" data-neckline="v-neck" data-occasion="casual" data-sleeve-length="short">
       <div class="card-img">
         <img src="images/ladies/img23.webp" alt="Product Front" class="img-front">
         <img src="images/ladies/img24.avif" alt="Product Back" class="img-back">
@@ -971,7 +999,8 @@
         <div class="extra">◼ ◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="2299" data-size="medium" data-color="white" data-pattern="solid" data-fit="regular" data-neckline="crew" data-occasion="casual" data-sleeve-length="long">
+    <div class="product-card" data-price="2299" data-size="medium" data-color="white" data-pattern="solid"
+      data-fit="regular" data-neckline="crew" data-occasion="casual" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img25.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img26.avif" alt="Product Back" class="img-back">
@@ -981,7 +1010,8 @@
         <div class="price">Rs.2,299.00</div>
       </div>
     </div>
-    <div class="product-card" data-price="1499" data-size="small" data-color="red" data-pattern="checked" data-fit="slim" data-neckline="v-neck" data-occasion="casual" data-sleeve-length="short">
+    <div class="product-card" data-price="1499" data-size="small" data-color="red" data-pattern="checked"
+      data-fit="slim" data-neckline="v-neck" data-occasion="casual" data-sleeve-length="short">
       <div class="card-img">
         <img src="images/ladies/img27.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img28.avif" alt="Product Back" class="img-back">
@@ -992,7 +1022,8 @@
         <div class="extra">◼ ◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="2299" data-size="large" data-color="black" data-pattern="solid" data-fit="regular" data-neckline="round" data-occasion="work" data-sleeve-length="long">
+    <div class="product-card" data-price="2299" data-size="large" data-color="black" data-pattern="solid"
+      data-fit="regular" data-neckline="round" data-occasion="work" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img29.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img30.avif" alt="Product Back" class="img-back">
@@ -1003,7 +1034,8 @@
         <div class="extra">+3</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="medium" data-color="blue" data-pattern="solid" data-fit="relaxed" data-neckline="round" data-occasion="casual" data-sleeve-length="sleeveless">
+    <div class="product-card" data-price="1999" data-size="medium" data-color="blue" data-pattern="solid"
+      data-fit="relaxed" data-neckline="round" data-occasion="casual" data-sleeve-length="sleeveless">
       <div class="card-img">
         <img src="images/ladies/img31.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img32.avif" alt="Product Back" class="img-back">
@@ -1015,7 +1047,8 @@
         <div class="extra">◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="large" data-color="black" data-pattern="solid" data-fit="oversized" data-neckline="v-neck" data-occasion="casual" data-sleeve-length="long">
+    <div class="product-card" data-price="1999" data-size="large" data-color="black" data-pattern="solid"
+      data-fit="oversized" data-neckline="v-neck" data-occasion="casual" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img33.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img34.avif" alt="Product Back" class="img-back">
@@ -1027,7 +1060,8 @@
         <div class="extra">◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="small" data-color="white" data-pattern="solid" data-fit="slim" data-neckline="crew" data-occasion="work" data-sleeve-length="3/4">
+    <div class="product-card" data-price="1999" data-size="small" data-color="white" data-pattern="solid"
+      data-fit="slim" data-neckline="crew" data-occasion="work" data-sleeve-length="3/4">
       <div class="card-img">
         <img src="images/ladies/img35.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img36.avif" alt="Product Back" class="img-back">
@@ -1039,7 +1073,8 @@
         <div class="extra">◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="medium" data-color="blue" data-pattern="striped" data-fit="regular" data-neckline="round" data-occasion="casual" data-sleeve-length="long">
+    <div class="product-card" data-price="1999" data-size="medium" data-color="blue" data-pattern="striped"
+      data-fit="regular" data-neckline="round" data-occasion="casual" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img37.webp" alt="Product Front" class="img-front">
         <img src="images/ladies/img38.avif" alt="Product Back" class="img-back">
@@ -1051,7 +1086,8 @@
         <div class="extra">◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="2299" data-size="large" data-color="red" data-pattern="solid" data-fit="oversized" data-neckline="turtleneck" data-occasion="casual" data-sleeve-length="long">
+    <div class="product-card" data-price="2299" data-size="large" data-color="red" data-pattern="solid"
+      data-fit="oversized" data-neckline="turtleneck" data-occasion="casual" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img39.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img40.avif" alt="Product Back" class="img-back">
@@ -1061,7 +1097,8 @@
         <div class="price">Rs.2,299.00</div>
       </div>
     </div>
-    <div class="product-card" data-price="1499" data-size="small" data-color="black" data-pattern="checked" data-fit="slim" data-neckline="v-neck" data-occasion="party" data-sleeve-length="short">
+    <div class="product-card" data-price="1499" data-size="small" data-color="black" data-pattern="checked"
+      data-fit="slim" data-neckline="v-neck" data-occasion="party" data-sleeve-length="short">
       <div class="card-img">
         <img src="images/ladies/img41.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img42.avif" alt="Product Back" class="img-back">
@@ -1072,7 +1109,8 @@
         <div class="extra">◼ ◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="2299" data-size="medium" data-color="white" data-pattern="solid" data-fit="regular" data-neckline="crew" data-occasion="work" data-sleeve-length="long">
+    <div class="product-card" data-price="2299" data-size="medium" data-color="white" data-pattern="solid"
+      data-fit="regular" data-neckline="crew" data-occasion="work" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img43.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img44.avif" alt="Product Back" class="img-back">
@@ -1083,7 +1121,8 @@
         <div class="extra">+3</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="large" data-color="blue" data-pattern="solid" data-fit="relaxed" data-neckline="round" data-occasion="casual" data-sleeve-length="sleeveless">
+    <div class="product-card" data-price="1999" data-size="large" data-color="blue" data-pattern="solid"
+      data-fit="relaxed" data-neckline="round" data-occasion="casual" data-sleeve-length="sleeveless">
       <div class="card-img">
         <img src="images/ladies/img45.webp" alt="Product Front" class="img-front">
         <img src="images/ladies/img46.avif" alt="Product Back" class="img-back">
@@ -1095,7 +1134,8 @@
         <div class="extra">◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="small" data-color="red" data-pattern="striped" data-fit="slim" data-neckline="v-neck" data-occasion="party" data-sleeve-length="short">
+    <div class="product-card" data-price="1999" data-size="small" data-color="red" data-pattern="striped"
+      data-fit="slim" data-neckline="v-neck" data-occasion="party" data-sleeve-length="short">
       <div class="card-img">
         <img src="images/ladies/img47.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img48.avif" alt="Product Back" class="img-back">
@@ -1107,7 +1147,8 @@
         <div class="extra">◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="1999" data-size="medium" data-color="black" data-pattern="solid" data-fit="oversized" data-neckline="turtleneck" data-occasion="casual" data-sleeve-length="long">
+    <div class="product-card" data-price="1999" data-size="medium" data-color="black" data-pattern="solid"
+      data-fit="oversized" data-neckline="turtleneck" data-occasion="casual" data-sleeve-length="long">
       <div class="card-img">
         <img src="images/ladies/img49.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img50.avif" alt="Product Back" class="img-back">
@@ -1119,7 +1160,8 @@
         <div class="extra">◼ ◼</div>
       </div>
     </div>
-    <div class="product-card" data-price="2299" data-size="large" data-color="white" data-pattern="solid" data-fit="regular" data-neckline="crew" data-occasion="work" data-sleeve-length="3/4">
+    <div class="product-card" data-price="2299" data-size="large" data-color="white" data-pattern="solid"
+      data-fit="regular" data-neckline="crew" data-occasion="work" data-sleeve-length="3/4">
       <div class="card-img">
         <img src="images/ladies/img51.avif" alt="Product Front" class="img-front">
         <img src="images/ladies/img52.avif" alt="Product Back" class="img-back">
@@ -1168,13 +1210,15 @@
     </div>
     <div class="footer-signup">
       <p>Sign up now and be the first to know about exclusive offers, latest fashion news & style tips!</p>
-      <p><a href="#" aria-label="Read more about exclusive offers, latest fashion news, and style tips">READ MORE</a></p>
+      <p><a href="#" aria-label="Read more about exclusive offers, latest fashion news, and style tips">READ MORE</a>
+      </p>
     </div>
   </footer>
 
   <div class="section4">
     <img src="https://i.ibb.co/3sL0Q1Z/hm-logo.png" alt="" style="width: 70px; padding: 10px; padding-top: 50px;">
-    <p style="padding: 10px;">INDIA (Rs.) <a href="" style="padding-left: 5PX; color: black; font-weight: bold; text-decoration: underline;">CHANGE REGION</a></p>
+    <p style="padding: 10px;">INDIA (Rs.) <a href=""
+        style="padding-left: 5PX; color: black; font-weight: bold; text-decoration: underline;">CHANGE REGION</a></p>
   </div>
   <div class="section5">
     <div>
@@ -1192,7 +1236,9 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
   <script>
     // Sort dropdown functionality
     const sortByBtn = document.getElementById("sortByBtn");
@@ -1236,7 +1282,7 @@
         const targetId = section.getAttribute("data-target");
         const target = document.getElementById(targetId);
         const icon = section.querySelector(".toggle-icon");
-        
+
         // Close all other open sections first
         document.querySelectorAll('.filter-options.open').forEach(openSection => {
           if (openSection.id !== targetId) {
@@ -1244,22 +1290,87 @@
             openSection.previousElementSibling.querySelector(".toggle-icon").textContent = "+";
           }
         });
-        
+
         // Toggle the clicked section
         target.classList.toggle("open");
         icon.textContent = target.classList.contains("open") ? "−" : "+";
       });
     });
 
+    // Price range slider functionality
+    const priceSlider = document.getElementById('priceSlider');
+    const priceRangeBar = document.getElementById('priceRangeBar');
+    const handleMin = document.getElementById('handleMin');
+    const handleMax = document.getElementById('handleMax');
+    const priceRangeDisplay = document.getElementById('priceRange');
+    
+    let minPrice = 1000;
+    let maxPrice = 20000;
+    let currentMinPrice = 1000;
+    let currentMaxPrice = 20000;
+    
+    function updatePriceRange() {
+      const minPercent = ((currentMinPrice - minPrice) / (maxPrice - minPrice)) * 100;
+      const maxPercent = ((currentMaxPrice - minPrice) / (maxPrice - minPrice)) * 100;
+      
+      handleMin.style.left = `${minPercent}%`;
+      handleMax.style.left = `${maxPercent}%`;
+      
+      priceRangeBar.style.left = `${minPercent}%`;
+      priceRangeBar.style.width = `${maxPercent - minPercent}%`;
+      
+      priceRangeDisplay.textContent = `₹${currentMinPrice} - ₹${currentMaxPrice}`;
+      
+      // Apply filters when price range changes
+      applyFilters();
+    }
+    
+    let isDragging = false;
+    let currentHandle = null;
+    
+    handleMin.addEventListener('mousedown', () => {
+      isDragging = true;
+      currentHandle = 'min';
+    });
+    
+    handleMax.addEventListener('mousedown', () => {
+      isDragging = true;
+      currentHandle = 'max';
+    });
+    
+    document.addEventListener('mousemove', (e) => {
+      if (!isDragging) return;
+      
+      const sliderRect = priceSlider.getBoundingClientRect();
+      const sliderWidth = sliderRect.width;
+      const position = (e.clientX - sliderRect.left) / sliderWidth;
+      const value = minPrice + position * (maxPrice - minPrice);
+      
+      if (currentHandle === 'min') {
+        currentMinPrice = Math.max(minPrice, Math.min(value, currentMaxPrice - 1000));
+      } 
+      else {
+        currentMaxPrice = Math.max(currentMinPrice + 1000, Math.min(value, maxPrice));
+      }
+      
+      updatePriceRange();
+    });
+    
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+      currentHandle = null;
+    });
+    
     // Filter functionality
     const clearAllBtn = document.querySelector(".clear-all-btn");
     const viewItemsBtn = document.querySelector(".view-items-btn");
+    const productGrid = document.getElementById('productGrid');
     const productCards = document.querySelectorAll(".product-card");
     
     // Function to apply filters
     function applyFilters() {
       const activeFilters = {
-        price: { min: 1000, max: 20000 },
+        price: { min: currentMinPrice, max: currentMaxPrice },
         size: [],
         color: [],
         pattern: [],
@@ -1268,55 +1379,56 @@
         occasion: [],
         sleeveLength: []
       };
-      
+
       // Get selected size filters
       document.querySelectorAll('#size input[type="checkbox"]:checked').forEach(checkbox => {
         activeFilters.size.push(checkbox.value);
       });
-      
+
       // Get selected color filters
       document.querySelectorAll('#color input[type="checkbox"]:checked').forEach(checkbox => {
         activeFilters.color.push(checkbox.value);
       });
-      
+
       // Get selected pattern filters
       document.querySelectorAll('#pattern input[type="checkbox"]:checked').forEach(checkbox => {
         activeFilters.pattern.push(checkbox.value);
       });
-      
+
       // Get selected fit filters
       document.querySelectorAll('#fit input[type="checkbox"]:checked').forEach(checkbox => {
         activeFilters.fit.push(checkbox.value);
       });
-      
+
       // Get selected neckline filters
       document.querySelectorAll('#neckline input[type="checkbox"]:checked').forEach(checkbox => {
         activeFilters.neckline.push(checkbox.value);
       });
-      
+
       // Get selected occasion filters
       document.querySelectorAll('#occasion input[type="checkbox"]:checked').forEach(checkbox => {
         activeFilters.occasion.push(checkbox.value);
       });
-      
+
       // Get selected sleeve length filters
       document.querySelectorAll('#sleeve-length input[type="checkbox"]:checked').forEach(checkbox => {
         activeFilters.sleeveLength.push(checkbox.value);
       });
-      
+
       // Count visible products
       let visibleCount = 0;
-      
+      const visibleCards = [];
+
       // Apply filters to each product
       productCards.forEach(card => {
         let show = true;
-        
+
         // Check price filter
         const price = parseInt(card.getAttribute('data-price'));
         if (price < activeFilters.price.min || price > activeFilters.price.max) {
           show = false;
         }
-        
+
         // Check size filter
         if (activeFilters.size.length > 0) {
           const size = card.getAttribute('data-size');
@@ -1324,7 +1436,7 @@
             show = false;
           }
         }
-        
+
         // Check color filter
         if (activeFilters.color.length > 0) {
           const color = card.getAttribute('data-color');
@@ -1332,7 +1444,7 @@
             show = false;
           }
         }
-        
+
         // Check pattern filter
         if (activeFilters.pattern.length > 0) {
           const pattern = card.getAttribute('data-pattern');
@@ -1340,7 +1452,7 @@
             show = false;
           }
         }
-        
+
         // Check fit filter
         if (activeFilters.fit.length > 0) {
           const fit = card.getAttribute('data-fit');
@@ -1348,7 +1460,7 @@
             show = false;
           }
         }
-        
+
         // Check neckline filter
         if (activeFilters.neckline.length > 0) {
           const neckline = card.getAttribute('data-neckline');
@@ -1356,7 +1468,7 @@
             show = false;
           }
         }
-        
+
         // Check occasion filter
         if (activeFilters.occasion.length > 0) {
           const occasion = card.getAttribute('data-occasion');
@@ -1364,7 +1476,7 @@
             show = false;
           }
         }
-        
+
         // Check sleeve length filter
         if (activeFilters.sleeveLength.length > 0) {
           const sleeveLength = card.getAttribute('data-sleeve-length');
@@ -1372,40 +1484,95 @@
             show = false;
           }
         }
-        
+
         // Show or hide the product
         if (show) {
           card.style.display = 'flex';
           visibleCount++;
+          visibleCards.push(card);
         } else {
           card.style.display = 'none';
         }
       });
-      
+
       // Update the view button with the count
       viewItemsBtn.textContent = `VIEW [${visibleCount}]`;
+      
+      // Apply current sorting to visible products
+      applySorting(visibleCards);
     }
-    
+
+    // Function to apply sorting
+    function applySorting(cards) {
+      const selectedSort = document.querySelector('input[name="sort"]:checked').value;
+      
+      // Convert NodeList to Array for sorting
+      const cardsArray = Array.from(cards);
+      
+      // Sort the array based on the selected criteria
+      cardsArray.sort((a, b) => {
+        const priceA = parseInt(a.getAttribute('data-price'));
+        const priceB = parseInt(b.getAttribute('data-price'));
+        
+        switch(selectedSort) {
+          case 'lowest':
+            return priceA - priceB;
+          case 'highest':
+            return priceB - priceA;
+          case 'newest':
+            // For this demo, we'll sort by the last digit of the image number
+            const imgA = a.querySelector('.img-front').src;
+            const imgB = b.querySelector('.img-front').src;
+            const numA = parseInt(imgA.match(/img(\d+)\./)[1]);
+            const numB = parseInt(imgB.match(/img(\d+)\./)[1]);
+            return numB - numA;
+          case 'recommended':
+          default:
+            // Default order - as they appear in the HTML
+            return 0;
+        }
+      });
+      
+      // Reorder the DOM elements
+      cardsArray.forEach(card => {
+        productGrid.appendChild(card);
+      });
+    }
+
     // Add event listeners to all checkboxes
     document.querySelectorAll('.filter-options input[type="checkbox"]').forEach(checkbox => {
       checkbox.addEventListener('change', applyFilters);
     });
-    
+
+    // Add event listeners to sort radio buttons
+    document.querySelectorAll('input[name="sort"]').forEach(radio => {
+      radio.addEventListener('change', () => {
+        // Get currently visible cards
+        const visibleCards = Array.from(productCards).filter(card => 
+          card.style.display !== 'none'
+        );
+        applySorting(visibleCards);
+      });
+    });
+
     // Clear all filters
     clearAllBtn.addEventListener('click', () => {
       // Uncheck all checkboxes
       document.querySelectorAll('.filter-options input[type="checkbox"]').forEach(checkbox => {
         checkbox.checked = false;
       });
-      
+
       // Reset price range
-      document.getElementById('priceRange').textContent = '$1000 - $20000';
-      
+      currentMinPrice = minPrice;
+      currentMaxPrice = maxPrice;
+      updatePriceRange();
+
       // Apply filters to show all products
       applyFilters();
     });
-    
+
     // Initialize filters on page load
+    updatePriceRange();
     applyFilters();
 
     // Search sidebar functionality
@@ -1429,13 +1596,13 @@
             card.style.display = "none";
           }
         });
-        
+
         // Add to search history if not already there
         addToSearchHistory(query);
-        
+
         // Close the search sidebar
         searchSidebar.classList.remove("open");
-        
+
         // Update the view button count
         const visibleCount = document.querySelectorAll('.product-card[style="display: flex;"]').length;
         viewItemsBtn.textContent = `VIEW [${visibleCount}]`;
@@ -1447,7 +1614,7 @@
       // Check if query already exists in history
       const existingItems = Array.from(historyList.querySelectorAll('li'));
       const alreadyExists = existingItems.some(item => item.textContent.toLowerCase() === query.toLowerCase());
-      
+
       if (!alreadyExists) {
         const newItem = document.createElement('li');
         newItem.textContent = query;
@@ -1477,10 +1644,10 @@
     clearHistoryBtn.addEventListener("click", () => {
       historyList.innerHTML = '';
     });
-    
+
     // Click on history item to search
     historyList.addEventListener('click', (e) => {
-      if(e.target.tagName === 'LI'){
+      if (e.target.tagName === 'LI') {
         const query = e.target.textContent;
         searchInput.value = query;
         performSearch(query);
@@ -1489,7 +1656,7 @@
 
     // Click on popular search item to search
     popularList.addEventListener('click', (e) => {
-      if(e.target.tagName === 'LI'){
+      if (e.target.tagName === 'LI') {
         const query = e.target.textContent;
         searchInput.value = query;
         performSearch(query);
@@ -1499,24 +1666,27 @@
     // Clear search and show all products when search input is empty
     searchInput.addEventListener('input', (e) => {
       if (e.target.value.trim() === '') {
-        productCards.forEach(card => {
-          card.style.display = "flex";
+        // Reset all filters and show all products
+        document.querySelectorAll('.filter-options input[type="checkbox"]').forEach(checkbox => {
+          checkbox.checked = false;
         });
         
-        // Update the view button count
-        const visibleCount = document.querySelectorAll('.product-card[style="display: flex;"]').length;
-        viewItemsBtn.textContent = `VIEW [${visibleCount}]`;
+        currentMinPrice = minPrice;
+        currentMaxPrice = maxPrice;
+        updatePriceRange();
+        applyFilters();
       }
     });
 
     // Close search sidebar when clicking outside
     document.addEventListener('click', (e) => {
-      if (searchSidebar.classList.contains('open') && 
-          !searchSidebar.contains(e.target) && 
-          e.target !== openSearchBtn) {
+      if (searchSidebar.classList.contains('open') &&
+        !searchSidebar.contains(e.target) &&
+        e.target !== openSearchBtn) {
         searchSidebar.classList.remove('open');
       }
     });
   </script>
 </body>
+
 </html>
